@@ -31,13 +31,11 @@
 <body>
     <div class="wrapper">    
         <div class="navbar container">
-            <a id="author-name" class="alignable pull-left" href="">BAR 2024</a>
+            <a id="author-name" class="alignable pull-left" href="">BAR 2023</a>
             <ul id="navlist" class="alignable pull-right navbar-ul">
                 <li class="alignable pull-left nav-list"><a href="/">CFP</a> /
                 </li>
                 <li class="alignable pull-left nav-list"><a href="/program">Program</a> /
-                </li>
-                <li class="alignable pull-left nav-list"><a href="https://bar2023.github.io">BAR'23</a> /
                 </li>
                 <li class="alignable pull-left nav-list"><a href="https://www.ndss-symposium.org/ndss2022/cfp-bar-workshop/">BAR'22</a> /
                 </li>
@@ -52,9 +50,152 @@
 
         <div style="clear:both"></div><hr>    
         <div class="container content">    
-            <h1 id="bar-2023-program">BAR 2024 Program</h1> 
+            <h1 id="bar-2023-program">BAR 2023 Program</h1> 
+            <hr />
 
-            <i>Coming soon!</i>
+            <table>
+                <thead>
+                    <tr>
+                        <th>DATE</th>
+                        <th>All times in PDT (UTC-7)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8:45 - 9:00AM</td>
+                        <td><b style="color:#ff8853">Welcome and Introductory Remarks</b></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>9:00 - 10:00AM</td>
+                        <td><button class="collapsible"><i>Keynote</i>: <b style="color:#0db4ba">Binary Code Patching: An Ancient Art Refined for the 21st Century</b> <br><br>
+                        <b style="color:#ff8853">Dr. Barton P. Miller</b> (Vilas Distinguished Achievement Professor at The University of Wisconsin–Madison)</button> 
+                        <div class="colcontent" style="">
+                            <p>
+                                <i>Abstract</i>: Patching binary code dates back to some of the earliest computer systems. Binary code patching allows access to a program without having access to the source code, obviating the need to recompile, re-link, and, in the dynamic case, re-execute.
+                                In the early days, it was a bold technique used by serious programmers to avoid the long recompile/reassemble and link steps. Code patching required an intimate knowledge of the instruction set and its binary representation. Great advances have been made in simplifying the use of code patching, making it less error prone and more flexible. "Binary rewriters" were a great advance in the technology for modifying a binary before its execution. Early tools, such as OM, EEL, and Vulcan, enabled the building of tools for tracing, simulation, testing, and sandboxing.
+                                Moving beyond static patching, we developed "dynamic instrumentation", the ability to patch code into a running program. Dynamic instrumentation provided the ability to adapt the code to the immediate need, dynamically control overhead costs. We applied this technology to both user programs and operating system kernels producing the Dyninst and Kerninst tool kits. This technology formed the foundation of the Paradyn Performance Tools.
+                                Dynamic code patching continued to get more aggressive. We developed "self-propelled instrumentation", which inserts instrumentation code that propagates itself along the program's control flow as the program executes. At its best, this technique can provide very low overhead, detailed instrumentation in support of fault isolation and identification of intermittent performance issues.
+                                More recently, we have addressed a wide variety of issues related to binary code patching including analyzing and patching defensive and obfuscated malware, parallelizing the binary code parsing process to quickly patch huge (GB+) binaries, and efficient analysis and instrumentation of GPU binaries.
+                                Key to both static and dynamic patching are the interfaces. There is a difficult balance between providing an interface that abstracts the details of the code, often using control- and data-flow graphs and instruction categories, and an interface that exposes the details of the instruction set. Our primary interface is based on editing of the control flow graph, based on an editing algebra that is closed under valid control flow graphs.
+                                In this talk, I will discuss the development of code patching over the years, with examples from the various technologies (including our tools) and present results from our latest work in self- propelled instrumentation. I will also discuss interface abstractions and our work towards the goal of multi-platform interfaces and tools.
+                            
+                                <br><br>
+
+                                <i>Bio</i>: Barton Miller is the Vilas Distinguished Achievement Professor at UW-Madison
+                                Miller is a co-PI on the Trusted CI NSF Cybersecurity Center of Excellence, where he leads the software assurance effort. His research interests include software security, in-depth vulnerability assessment, binary and malicious code analysis and instrumentation, extreme scale systems, and parallel and distributed program measurement and debugging. In 1988, Miller founded the field of Fuzz random software testing, which is the foundation of many security and software engineering disciplines. In 1992, Miller (working with his then-student Prof. Jeffrey Hollingsworth) founded the field of dynamic binary code instrumentation and coined the term “dynamic instrumentation”. Miller Miller is a Fellow of the ACM and recently won the Jean Claude Laprie Award in dependable computing for his work on fuzz testing.
+                                Miller was the chair of the Institute for Defense Analysis Center for Computing Sciences Program Review Committee, member of the U.S. National Nuclear Safety Administration Los Alamos and Lawrence Livermore National Labs Cyber Security Review Committee (POFMR), member of the Los Alamos National Laboratory Computing, Communications and Networking Division Review Committee, has been on the U.S. Secret Service Electronic Crimes Task Force (Chicago Area) is currently an advisor to the Wisconsin National Guard Cyber Prevention Team.
+                            </p> 
+                        </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>10:00 - 10:30AM</td>
+                        <td>Break</td>
+                    </tr>
+
+                    <tr>
+                        <td>10:30 - 12:30PM</td>
+                        <td><strong><b style="color:#ff8853">Session 1: Assisting Binary Analysis</b></strong>
+                        <!--<p> Session chair: CHAIR (AFFILIATION)</p> </div>-->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> </td>
+                        <td><a href="">Evaluating Disassembly Ground Truth Through Dynamic Tracing</a> <br /> 
+                        <em>Lambang Akbar (National University of Singapore), Yuancheng Jiang (National University of Singapore), Roland Yap (National University of Singapore), Zhenkai Liang (National University of Singapore), Liu Zhuohao (National University of Singapore)</em><br />
+                        <!--<a style="color:#0000ff" href="">Paper</a> <a style="color:#ffff00" href="">Slides</a> <a style="color:#00ffff" href="">Code</a></td>-->
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td><a href="">Efficient Normalized Reduction and Generation of Equivalent Multivariate Binary Polynomials</a> <br /> 
+                        <em>Arnau Gàmez-Montolio (City, University of London; Activision Research), Enric Florit (Universitat de Barcelona), Martin Brain (City, University of London), Jacob M. Howe (City, University of London)</em><br />
+                        <!--<a style="color:#0000ff" href="">Paper</a> <a style="color:#ffff00" href="">Slides</a> <a style="color:#00ffff" href="">Code</a></td>-->
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td><a href="">CBAT: A Comparative Binary Analysis Tool</a> <br /> 
+                        <em>Chloe Fortuna (STR), Chris Casinghino (Jane Street), Sam Lasser (Draper), JT Paasch (STR), Cody Roux (AWS), Philip Zucker (Draper)</em><br />
+                        <!--<a style="color:#0000ff" href="">Paper</a> <a style="color:#ffff00" href="">Slides</a> <a style="color:#00ffff" href="">Code</a></td>-->
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td><a href="">GTrans: Graph Transformer-Based Obfuscation-resilient Binary Code Similarity Detection</a> <br /> 
+                        <em>Yun Zhang (Hunan University), Yuling Liu (Hunan University), Ge Cheng (Xiangtan University), Bo Ou (Hunan University)</em><br />
+                        <!--<a style="color:#0000ff" href="">Paper</a> <a style="color:#ffff00" href="">Slides</a> <a style="color:#00ffff" href="">Code</a></td>-->
+                    </tr>
+
+                    <tr>
+                        <td>12:30 - 2:00PM</td>
+                        <td>Lunch</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>2:00 - 3:00PM</td>
+                        <td><button class="collapsible"><i>Keynote</i>: <b style="color:#0db4ba">Beyond the Bytes: Understanding the Limitations of Intrinsic Binary Analysis</b> <br><br>
+                        <b style="color:#ff8853">Peter Lafosse</b> (Owner and Co-Founder of Vector 35 Inc.)</button> 
+                        <div class="colcontent" style="">
+                            <p>
+                                <i>Abstract</i>: Binary analysis serves as a foundational technique for a wide array of cybersecurity tasks, including vulnerability identification and malware analysis. While these methods have evolved to become incredibly powerful, they are inherently bounded by the limitations of what can be inferred solely from the binary data within a file. This talk aims to provide an in-depth exploration of both the capabilities and the constraints of binary analysis, dissecting the fundamental goals that drive its usage and to explore potential solutions to these constraints.
+                                We will investigate the common objectives of binary analysis, such as code understanding, bug hunting, and threat analysis, and evaluate how these goals often remain unmet when confined to mere binary introspection. This talk will argue that while binary analysis is indispensable, it cannot be the sole methodology employed for a comprehensive solution.
+                                The presentation will advocate for the integration of external data sources, contextual information, runtime behavior, and most importantly machine learning and large language models as essential components for enriching the output of binary analysis tools. By fusing binary data with external inputs, we can transcend the inherent limitations and offer a more nuanced, accurate, and actionable analysis for our users.
+                            
+                                <br><br>
+
+                                <i>Bio</i>: Peter Lafosse is the owner and co-founder of Vector 35 Inc.
+                            </p> 
+                        </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3:00 - 3:30PM</td>
+                        <td>Break</td>
+                    </tr>
+
+                    <tr>
+                        <td>3:30 - 5:00PM</td>
+                        <td><strong><b style="color:#ff8853">Session 2: Applied Binary Analysis</b></strong> 
+                        <!--<p>Session chair: CHAIR (AFFILIATION)</p> </div>-->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> </td>
+                        <td><a href="">SURGEON: Performant, Flexible and Accurate Re-Hosting via Transplantation</a> <br /> 
+                        <em>Florian Hofhammer (EPFL), Marcel Busch (EPFL), Qinying Wang (EPFL and Zhejiang University), Manuel Egele (Boston University), Mathias Payer (EPFL)</em><br />
+                        <!--<a style="color:#0000ff" href="">Paper</a> <a style="color:#ffff00" href="">Slides</a> <a style="color:#00ffff" href="">Code</a></td>-->
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td><a href="">FirmDiff: Improving the Configuration of Linux Kernels Geared Towards Firmware Re-hosting</a> <br /> 
+                        <em>Ioannis Angelakopoulos (Boston University), Gianluca Stringhini (Boston University), Manuel Egele (Boston University)</em><br />
+                        <!--<a style="color:#0000ff" href="">Paper</a> <a style="color:#ffff00" href="">Slides</a> <a style="color:#00ffff" href="">Code</a></td>-->
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td><a href="">LibAFL QEMU: A Library for Fuzzing-oriented Emulation</a> <br /> 
+                        <em>Romain Malmain (EURECOM), Andrea Fioraldi (EURECOM), Aurelien Francillon (EURECOM)</em><br />
+                        <!--<a style="color:#0000ff" href="">Paper</a> <a style="color:#ffff00" href="">Slides</a> <a style="color:#00ffff" href="">Code</a></td>-->
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td><a href="">FirmLine: a Generic Pipeline for Large-Scale Analysis of Non-Linux Firmware</a> <br /> 
+                        <em>Alexander Balgavy (Independent), Marius Muench (University of Birmingham)</em><br />
+                        <!--<a style="color:#0000ff" href="">Paper</a> <a style="color:#ffff00" href="">Slides</a> <a style="color:#00ffff" href="">Code</a></td>-->
+                    </tr>
+
+                    <tr>
+                        <td>5:00 - 5:15PM</td>
+                        <td><b style="color:#ff8853">Best Paper Award and Closing Remarks</b></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
              
         </div>
 
